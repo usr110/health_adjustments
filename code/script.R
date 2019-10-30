@@ -59,3 +59,5 @@ ag75plus <- rd %>% filter(age_name %in% c('75 to 79', '80 plus')) %>%
             age_name = first(age_name)) %>% 
   mutate(age_name = str_replace(age_name, "75 to 79", "75+"))
 
+rdf <- rbind(ag16_24, ag25_34, ag35_49, ag50_64, ag65_74, ag75plus)
+
